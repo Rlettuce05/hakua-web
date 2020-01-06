@@ -9,6 +9,8 @@
             <link rel="stylesheet" href="styles/style_sm.css" type="text/css" media="(max-width: 640px)">
             <!--swiper-->
             <link rel="stylesheet" href="swiper/css/swiper.min.css">
+            <!-- lity -->
+            <link rel="stylesheet" href="styles/lity.css">
         <!--JS-->
             <!--bootstrap-->
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -19,6 +21,8 @@
             <!--jquery-->
             <script src="scripts/jquery-3.4.1.min.js"></script>
             <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- lity -->
+            <script src="scripts/lity.js"></script>
         <!--pageinfo-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -108,14 +112,17 @@
             <div id="Works">
 
                 <h2 class="index pt-4">Works</h2>
-                <div id="player_bg">
-                    <div id="player">
-                        <video class="embed-responsive embed-responsive-16by9"  id="player_id" controls><source id="player_play" src="images/空中分解.mp4"></video>
+                <hr color="black" align="left" class="horizon">
+                <div class="row movies" id="suside">
+                    <a href="images/suside.mp4" class="col-sm-12 col-md-6 col-lg-4" data-lity><video class="embed-responsive embed-responsive-16by9" src="images/suside.mp4" muted autoplay loop></video></a>
+                    <div class="col-sm-12 col-md-6 col-lg-8">
+                        <h4 class="video-tag"><i class="fas fa-circle" style="color: rgb(240,100,100); font-size: 15px;"></i>自主制作</h4>
+                        <h3 class="video-title">スーサイドパレヱド</h3>
+                        <a class="btn btn-outline-primary" href="https://twitter.com/hakua_loveEQ/status/1214113995717627904" target="_blank"><i class="fab fa-twitter" style="font-size: 25px;"></i></a>
                     </div>
                 </div>
-                <hr color="black" align="left" class="horizon">
                 <div class="row movies" id="Enma">
-                    <video class="col-sm-12 col-md-6 col-lg-4 embed-responsive embed-responsive-16by9 works_video" src="images/enma.mp4" muted autoplay loop></video>
+                    <a href="images/enma.mp4" class="col-sm-12 col-md-6 col-lg-4" data-lity><video class="embed-responsive embed-responsive-16by9" src="images/enma.mp4" muted autoplay loop></video></a>
                     <div class="col-sm-12 col-md-6 col-lg-8">
                         <h4 class="video-tag"><i class="fas fa-circle" style="color: rgb(100,100,240); font-size: 15px;"></i>合作</h4>
                         <h3 class="video-title">閻魔様のいうとおり</h3>
@@ -123,7 +130,7 @@
                     </div>
                 </div>
                 <div class="row movies" id="egorock">
-                    <video class="col-sm-12 col-md-6 col-lg-4 embed-responsive embed-responsive-16by9 works_video" src="images/エゴロック.mp4" muted autoplay loop></video>
+                    <a href="images/エゴロック.mp4" class="col-sm-12 col-md-6 col-lg-4" data-lity><video class="embed-responsive embed-responsive-16by9" src="images/エゴロック.mp4" muted autoplay loop></video></a>
                     <div class="col-sm-12 col-md-6 col-lg-8">
                         <h4 class="video-tag"><i class="fas fa-circle" style="color: rgb(240,100,100); font-size: 15px;"></i>自主制作</h4>
                         <h3 class="video-title">エゴロック</h3>
@@ -131,7 +138,7 @@
                     </div>
                 </div>
                 <div class="row movies" id="NSNL">
-                    <video class="col-sm-12 col-md-6 col-lg-4 embed-responsive embed-responsive-16by9 works_video" src="images/らいせいMG.mp4" muted autoplay loop></video>
+                    <a href="images/らいせいMG.mp4" class="col-sm-12 col-md-6 col-lg-4" data-lity><video class="embed-responsive embed-responsive-16by9" src="images/らいせいMG.mp4" muted autoplay loop></video></a>
                     <div class="col-sm-12 col-md-6 col-lg-8">
                         <h4 class="video-tag"><i class="fas fa-circle" style="color: rgb(100,240,100); font-size: 15px;"></i>限界映像大会</h4>
                         <h3 class="video-title">No Summer No Life</h3>
@@ -139,7 +146,7 @@
                     </div>
                 </div>
                 <div class="row movies" id="echo">
-                    <video class="col-sm-12 col-md-6 col-lg-4 embed-responsive embed-responsive-16by9 works_video" src="images/echo.mp4" muted autoplay loop></video>
+                    <a href="images/echo.mp4" class="col-sm-12 col-md-6 col-lg-4" data-lity><video class="embed-responsive embed-responsive-16by9" src="images/echo.mp4" muted autoplay loop></video></a>
                     <div class="col-sm-12 col-md-6 col-lg-8">
                         <h4 class="video-tag"><i class="fas fa-circle" style="color: rgb(240,100,100); font-size: 15px;"></i>自主制作</h3>
                         <h3 class="video-title">Echo</h3>
@@ -147,7 +154,7 @@
                     </div>
                 </div>
                 <div class="row movies" id="kutyubunkai">
-                    <video class="col-sm-12 col-md-6 col-lg-4 embed-responsive embed-responsive-16by9 works_video" src="images/空中分解.mp4" muted autoplay loop></video>
+                    <a href="images/空中分解.mp4" class="col-sm-12 col-md-6 col-lg-4" data-lity><video class="embed-responsive embed-responsive-16by9" src="images/空中分解.mp4" muted autoplay loop></video></a>
                     <div class="col-sm-12 col-md-6 col-lg-8">
                         <h4 class="video-tag"><i class="fas fa-circle" style="color: rgb(240,100,100); font-size: 15px;"></i>自主制作</h4>
                         <h3 class="video-title">空中分解</h3>
@@ -200,7 +207,7 @@
         </div>
 
         <footer>
-            <p>© 2019 <a href="https://twitter.com/hakua_loveEQ" target="_blank">Hakua_love</a></p>
+            <p>© 2019-2020 <a href="https://twitter.com/hakua_loveEQ" target="_blank">Hakua_love</a></p>
             <p>Design by <a href="https://twitter.com/minatoo86" target="_blank">Minato86</a> and <a href="https://twitter.com/RLettuce00" target="_blank">Rlettuce</a></p>
         </footer>
 
