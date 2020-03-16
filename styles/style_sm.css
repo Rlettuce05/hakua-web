@@ -17,11 +17,14 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+.sm-hide{
+    display: none;
+}
 .video-tag {
-    font-size: x-large;
+    font-size: large;
 }
 .video-title {
-    font-size: larger;
+    font-size: x-large;
 }
 #player_bg {
     display: none;
