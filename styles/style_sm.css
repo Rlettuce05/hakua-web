@@ -1,30 +1,64 @@
 @media screen and (max-width: 640px) {
 
 .pagetop {
-    background-color: rgb(25, 25, 25);
     color: white;
+    height: 100vh;
+    width: 100vw;
+}
+.pagetopimg {
+    height: 100vh;
+    width: auto;
+    position: fixed;
+    z-index: -5;
 }
 .horizon {
     width: 50vw;
     margin-bottom: 25px;
 }
 .self-introduction {
-    font-size: large;
+    font-size: larger;
+}
+.index{
+    font-size: 45px;
+}
+.maincontent {
+    background-color: white;
 }
   
 /*Works*/
 .movies {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    width: auto;
+    height: auto;
 }
-.sm-hide{
-    display: none;
+.movie_shows{
+    width: 320px;
+    height: 240px;
 }
 .video-tag {
-    font-size: large;
+    font-size: medium;
+}
+.video-tag.ind {
+    color: white;
 }
 .video-title {
-    font-size: x-large;
+    font-size: large;
+}
+.video-title.ind {
+    color: white;
+}
+.link_btn {
+    color: white;
+}
+.fa-twitter {
+    font-size: 20px;
+}
+.fa-youtube {
+    font-size: 25px;
+}
+.sm-hide {
+    display: none;
 }
 #player_bg {
     display: none;
