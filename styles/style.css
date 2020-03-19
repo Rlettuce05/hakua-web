@@ -2,9 +2,10 @@
 
 .pagetop {
     color: white;
+    width: 100%;
     height: 100vh;
-    width: 100vw;
 }
+
 .pagetopimg {
     height: 100vh;
     width: auto;
@@ -23,6 +24,7 @@
 }
 .maincontent {
     background-color: white;
+    padding: 50px 0;
 }
 
 /*Works*/
@@ -165,14 +167,17 @@
     z-index: 4;
 }
 
-/*footer*/
+/* footer */
 footer {
     background-color: black;
     color: white;
     text-align: center;
     line-height: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 30px 0;
+    line-height: normal;
+}
+footer p {
+    margin: 0;
 }
 
 }
