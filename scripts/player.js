@@ -29,3 +29,55 @@ $("#player_bg").click(function () {
     $('#player_bg').fadeOut(400);
     $('#player').fadeOut(100);
 });
+
+//works toggle
+$(function () {
+    $("#jisyu").click(function () {
+        $("#alpha").slideUp(500);
+        $("#kagi").slideUp(500);
+        $("#suside").slideDown(500);
+        $("#reel2019").slideDown(500);
+        $("#enma").slideUp(500);
+        $("#egorock").slideDown(500);
+        $("#NSNL").slideUp(500);
+        $("#echo").slideDown(500);
+        $("#kutyubunkai").slideDown(500);
+        $("#hare5").slideUp(500);
+    });
+    $("#genkai").click(function () {
+        $("#alpha").slideDown(500);
+        $("#kagi").slideDown(500);
+        $("#suside").slideUp(500);
+        $("#reel2019").slideUp(500);
+        $("#enma").slideUp(500);
+        $("#egorock").slideUp(500);
+        $("#NSNL").slideDown(500);
+        $("#echo").slideUp(500);
+        $("#kutyubunkai").slideUp(500);
+        $("#hare5").slideDown(500);
+    });
+    $("#gassaku").click(function () {
+        $("#alpha").slideUp(500);
+        $("#kagi").slideUp(500);
+        $("#suside").slideUp(500);
+        $("#reel2019").slideUp(500);
+        $("#enma").slideDown(500);
+        $("#egorock").slideUp(500);
+        $("#NSNL").slideUp(500);
+        $("#echo").slideUp(500);
+        $("#kutyubunkai").slideUp(500);
+        $("#hare5").slideUp(500);
+    });
+    $("#all").click(function () {
+        $("#alpha").slideDown(500);
+        $("#kagi").slideDown(500);
+        $("#suside").slideDown(500);
+        $("#reel2019").slideDown(500);
+        $("#enma").slideDown(500);
+        $("#egorock").slideDown(500);
+        $("#NSNL").slideDown(500);
+        $("#echo").slideDown(500);
+        $("#kutyubunkai").slideDown(500);
+        $("#hare5").slideDown(500);
+    });
+});

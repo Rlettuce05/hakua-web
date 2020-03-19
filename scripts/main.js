@@ -30,35 +30,19 @@ var swiper = new Swiper('.swiper-container', {
     autoHeight: true,
 });
 
-//スムーススクロール
+//Works Movie
 $(function() {
-    $('a[href^="#"]').click(function () { 
-          var href = $(this).attr("href");
-          var target = $(this.hash);
-          if (!target.length) return ;
-          var position = target.offset().top - 20;
-          $('body,html').animate({scrollTop:position},350,'swing');
-          return false;
-    });
-});
-
-//player
-$(function() {
-    var h = $(window).height();
-    $(".works_video").each(function() {
+    var player
+    $(".lity_atag").each(function() {
         $(this).click(function () {
-            var player_src = $(this).attr("src");
-            $("#player_play").attr('src', player_src);
-            $('#player_bg ,#player').height(h).css('display','block');
-            document.getElementById('player_id').load();
-            document.getElementById('player_id').play();
+            player = $(this).attr("id").split("_")[0]
+            document.getElementById(`${player}_movie`).load();
+            document.getElementById(`${player}_movie`).play();
         });
     });
-});
-$("#player_bg").click(function () {
-    document.getElementById('player_id').pause();
-    $('#player_bg').fadeOut(400);
-    $('#player').fadeOut(100);
+    $(document).on('click','.lity-wrap', function () {
+        document.getElementById(`${player}_movie`).pause();
+    });
 });
 
 //contact
@@ -71,3 +55,14 @@ $(function() {
           });
     });
 });
+
+//show
+var scrollreveal = {
+    origin: 'bottom',
+    distance: '50px',
+    scale: 1,
+    duration: 700,
+    delay: 300,
+    opacity: 0
+}
+ScrollReveal().reveal(".movies",scrollreveal);
