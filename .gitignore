@@ -1,2 +1,6 @@
-
+# 素材置場
 .assets/
+
+# VSCode workspace
+working.code-workspace
+workspace.code-workspace
