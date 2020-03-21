@@ -1,40 +1,18 @@
 @media screen and (max-width: 640px) {
 
-.pagetop {
-    color: white;
-    height: 100vh;
-    width: 100vw;
-}
-.pagetopimg {
-    height: 100vh;
-    width: auto;
-    position: fixed;
-    z-index: -5;
-}
-.horizon {
-    width: 50vw;
-    margin-bottom: 25px;
-}
-.self-introduction {
-    font-size: larger;
-}
 .index{
     font-size: 45px;
 }
 .maincontent {
     background-color: white;
 }
-  
+
 /*Works*/
 .movies {
     margin-top: 7px;
     margin-bottom: 7px;
     width: auto;
     height: auto;
-}
-.movie_shows{
-    width: 320px;
-    height: 240px;
 }
 .video-tag {
     font-size: medium;
@@ -47,15 +25,6 @@
 }
 .video-title.ind {
     color: white;
-}
-.link_btn {
-    color: white;
-}
-.fa-twitter {
-    font-size: 20px;
-}
-.fa-youtube {
-    font-size: 25px;
 }
 .sm-hide {
     display: none;
@@ -84,82 +53,8 @@
     z-index: 4;
 }
 
-/*contact*/
-.slide {
-    display: none;
-}
-.slider {
-    font-size: x-large;
-}
-.bar {
-    width: 250px;
-}
-.plus {
-    transition: 0.5s ease;
-}
-.plus.minus {
-    transform: rotate(315deg);
-}
-    
-/*header*/
-.header {
-    background-color: black;
-    display: flex;
-    width: 100%;
-    z-index: 2;
-    position: fixed;
-    top: 0px;
-}
-.menu {
-    color: white;
-    font-size: x-large;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.menu:hover {
-    text-decoration: none;
-    color: white;
-    text-shadow: 0px 0px 5px white;
-}
-  
 /*swiper*/
 .swiper-container {
     display: none;
 }
- 
-/*loader*/
-#loader-bg {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background: #ffffff;
-    z-index: 3;
-}
-#loader {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    margin-top: -150px;
-    margin-left: -150px;
-    text-align: center;
-    color: #fff;
-    z-index: 4;
-}
-   
-/*footer*/
-footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    line-height: 12px;
-    margin-top: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-}
+} */
