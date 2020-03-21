@@ -6,7 +6,6 @@
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
             <!--style-->
             <link rel="stylesheet" href="styles/style.css" type="text/css" media="(min-width: 640px)">
-            <link rel="stylesheet" href="styles/style_sm.css" type="text/css" media="(max-width: 640px)">
             <!--swiper-->
             <link rel="stylesheet" href="swiper/css/swiper.min.css">
             <!-- lity -->
@@ -14,6 +13,7 @@
         <!--JS-->
             <!--bootstrap-->
             <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <!--fontawesome-->
             <script src="https://kit.fontawesome.com/387f5314d4.js" crossorigin="anonymous"></script>
@@ -21,7 +21,6 @@
             <script src="scripts/jquery-3.4.1.min.js"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
             <!-- lity -->
-            <script src="scripts/ljquery.js"></script>
             <script src="scripts/lity.js"></script>
             <!--scrollreveal-->
             <script src="scripts/scrollreveal.min.js"></script>
@@ -40,13 +39,13 @@
             </div>
         </div>
 
-        <div id="warp">
-
         <div class="pagetop">
-            <img src="images/pagetop image.png" class="pagetopimg">
-            <div class="container">
-                <h1 class="pt-5">Hakua's works</h1>
-                <div class="swiper-container pt-3 pb-5">
+            <div id="pagetop-title">
+                <h1 class="container">Hakua's Works</h1>
+            </div>
+
+            <div class="swipe-wrap">
+                <div id="pagetop-swipe" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <p class="centering"><video class="slide-content" src="images/suside.mp4" muted autoplay loop alt="suside"></p>
@@ -71,187 +70,214 @@
         </div>
 
         <div class="maincontent">
-        <div class="container">
-            <div id="About">
-                <h2 class="index pt-4">About</h2>
-                <hr color="black" align="left" class="horizon">
-                <div class="row">
-                    <img class="col-sm-12 col-md-6 col-lg-4" src="images/icon.jpg">
-                    <div class="col-sm-12 col-md-6 col-lg-8">
-                        <p class="self-introduction">映像制作をしている高校生です。</p>
-                        <h4>
-                            <a class="btn btn-outline-danger" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-primary" href="https://twitter.com/hakua_loveEQ" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </h4>
-                    </div>
-                </div>
-            </div>
-
-            <div id="Works">
-
-                <h2 class="index pt-4">Works</h2>
-                <hr color="black" align="left" class="horizon">
-                <div class="row">
-                    <div class="col-lg-4 col-md-12">
-                        <div class="movies" id="alpha">
-                            <a href="#alpha_hide"  id="alpha_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/alpha_small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="alpha_hide">
-                                <div class="row">
-                                    <video src="images/alpha.mp4" class="col-lg-6 col-md-12 movie_source" id="alpha_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">Alpha Draconis</h4>
-                                        <h3 class="video-tag ind">限界映像大会</h3>
-                                        <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1234483765700775936?s=19" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="movies" id="gift">
-                            <a href="#gift_hide"  id="gift_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/kagi_small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="gift_hide">
-                                <div class="row">
-                                    <video src="images/kagi.mp4" class="col-lg-6 col-md-12 movie_source" id="gift_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">Gift</h4>
-                                        <h3 class="video-tag ind">限界映像大会</h3>
-                                        <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1216187755291561984" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="movies" id="suside">
-                            <a href="#suside_hide"  id="suside_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/suside-small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="suside_hide">
-                                <div class="row">
-                                    <video src="images/suside.mp4" class="col-lg-6 col-md-12 movie_source" id="suside_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">スーサイドパレヱド</h4>
-                                        <h3 class="video-tag ind">自主制作</h3>
-                                        <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1214113995717627904" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
-                                        <a class="btn" href="https://www.youtube.com/watch?v=p42qPy7uxwk&feature=youtu.be" target="_blank"><i class="fab fa-youtube link_btn"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="movies" id="reel2019">
-                            <a href="#reel2019_hide"  id="reel2019_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/reel2019-small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="reel2019_hide">
-                                <div class="row">
-                                    <video src="images/reel2019.mp4" class="col-lg-6 col-md-12 movie_source" id="reel2019_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">REEL 2019</h4>
-                                        <h3 class="video-tag ind">自主制作</h3>
-                                        <a class="btn" href="https://www.youtube.com/watch?v=etcIMioQl28" target="_blank"><i class="fab fa-youtube link_btn"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 sm-hide">
-                        <div class="movies" id="enma">
-                            <a href="#enma_hide"  id="enma_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/enma-small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="enma_hide">
-                                <div class="row">
-                                    <video src="images/enma.mp4" class="col-lg-6 col-md-12 movie_source" id="enma_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">閻魔様のいうとおり</h4>
-                                        <h3 class="video-tag ind">合作</h3>
-                                        <a class="btn" href="https://www.youtube.com/watch?v=sIRJlDjcfOs" target="_blank"><i class="fab fa-youtube link_btn"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 sm-hide">
-                        <div class="movies" id="egorock">
-                            <a href="#egorock_hide"  id="egorock_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/エゴロック-small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="egorock_hide">
-                                <div class="row">
-                                    <video src="images/エゴロック.mp4" class="col-lg-6 col-md-12 movie_source" id="egorock_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">エゴロック</h4>
-                                        <h3 class="video-tag ind">自主制作</h3>
-                                        <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1185761001402028032" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 sm-hide">
-                        <div class="movies" id="NSNL">
-                            <a href="#NSNL_hide"  id="NSNL_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/らいせいMG-small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="NSNL_hide">
-                                <div class="row">
-                                    <video src="images/らいせいMG.mp4" class="col-lg-6 col-md-12 movie_source" id="NSNL_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">No Summer No Life</h4>
-                                        <h3 class="video-tag ind">限界映像大会</h3>
-                                        <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1185522504086933504" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 sm-hide">
-                        <div class="movies" id="echo">
-                            <a href="#echo_hide"  id="echo_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/echo-small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="echo_hide">
-                                <div class="row">
-                                    <video src="images/echo.mp4" class="col-lg-6 col-md-12 movie_source" id="echo_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">Echo</h4>
-                                        <h3 class="video-tag ind">自主制作</h3>
-                                        <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1176024090240409600" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 sm-hide">
-                        <div class="movies" id="kuutyuubunkai">
-                            <a href="#kuutyuubunkai_hide"  id="kuutyuubunkai_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/空中分解-small.mp4" muted autoplay loop></video></a>
-                            <div class="lity-hide" id="kuutyuubunkai_hide">
-                                <div class="row">
-                                    <video src="images/空中分解.mp4" class="col-lg-6 col-md-12 movie_source" id="kuutyuubunkai_movie"></video>
-                                    <div class="col-lg-6 col-md-12 movie_intro">
-                                        <h4 class="video-title ind">空中分解</h4>
-                                        <h3 class="video-tag ind">自主制作</h3>
-                                        <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1164558318112612352" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container">
+                <div id="About">
+                    <h2 class="index pt-4">About</h2>
+                    <hr color="black" align="left" class="horizon">
+                    <div class="row">
+                        <img class="col-sm-12 col-md-6 col-lg-4" src="images/icon.jpg">
+                        <div class="col-sm-12 col-md-6 col-lg-8">
+                            <p class="self-introduction">映像制作をしている高校生です。</p>
+                            <h4>
+                                <a class="btn btn-outline-danger" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-primary" href="https://twitter.com/hakua_loveEQ" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </h4>
                         </div>
                     </div>
                 </div>
-                <a class="btn btn-outline-secondary mt-3" href="discograpy.html"><h5 class="andmore">and more</h5></a>
-            </div>
 
-            <div id="Contact">
-                <h2 class="index pt-4">Contact</h2>
-                <hr color="black" align="left" class="horizon">
-                <div id="irai_about">
-                    <a class="slidertitle">
-                        <h3 class="slider"><i class="fas fa-plus plus"></i>　依頼について</h3>
-                    </a>
-                    <hr color="black" align="left" class="bar">
-                    <div class="slide"><p>現在依頼を受け付けておりません。</p></div>
+                <div id="Works">
+
+                    <h2 class="index pt-4">Works</h2>
+                    <hr color="black" align="left" class="horizon">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="movies" id="alpha">
+                                <a href="#alpha_hide"  id="alpha_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/alpha_small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="alpha_hide">
+                                    <div class="row">
+                                        <video src="images/alpha.mp4" class="col-lg-6 col-md-12 movie_source" id="alpha_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">Alpha Draconis</h4>
+                                            <h3 class="video-tag ind">限界映像大会</h3>
+                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1234483765700775936?s=19" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="movies" id="gift">
+                                <a href="#gift_hide"  id="gift_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/kagi_small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="gift_hide">
+                                    <div class="row">
+                                        <video src="images/kagi.mp4" class="col-lg-6 col-md-12 movie_source" id="gift_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">Gift</h4>
+                                            <h3 class="video-tag ind">限界映像大会</h3>
+                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1216187755291561984" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="movies" id="suside">
+                                <a href="#suside_hide"  id="suside_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/suside-small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="suside_hide">
+                                    <div class="row">
+                                        <video src="images/suside.mp4" class="col-lg-6 col-md-12 movie_source" id="suside_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">スーサイドパレヱド</h4>
+                                            <h3 class="video-tag ind">自主制作</h3>
+                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1214113995717627904" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                            <a class="btn" href="https://www.youtube.com/watch?v=p42qPy7uxwk&feature=youtu.be" target="_blank"><i class="fab fa-youtube link_btn"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="movies" id="reel2019">
+                                <a href="#reel2019_hide"  id="reel2019_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/reel2019-small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="reel2019_hide">
+                                    <div class="row">
+                                        <video src="images/reel2019.mp4" class="col-lg-6 col-md-12 movie_source" id="reel2019_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">REEL 2019</h4>
+                                            <h3 class="video-tag ind">自主制作</h3>
+                                            <a class="btn" href="https://www.youtube.com/watch?v=etcIMioQl28" target="_blank"><i class="fab fa-youtube link_btn"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 sm-hide">
+                            <div class="movies" id="enma">
+                                <a href="#enma_hide"  id="enma_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/enma-small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="enma_hide">
+                                    <div class="row">
+                                        <video src="images/enma.mp4" class="col-lg-6 col-md-12 movie_source" id="enma_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">閻魔様のいうとおり</h4>
+                                            <h3 class="video-tag ind">合作</h3>
+                                            <a class="btn" href="https://www.youtube.com/watch?v=sIRJlDjcfOs" target="_blank"><i class="fab fa-youtube link_btn"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 sm-hide">
+                            <div class="movies" id="egorock">
+                                <a href="#egorock_hide"  id="egorock_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/エゴロック-small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="egorock_hide">
+                                    <div class="row">
+                                        <video src="images/エゴロック.mp4" class="col-lg-6 col-md-12 movie_source" id="egorock_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">エゴロック</h4>
+                                            <h3 class="video-tag ind">自主制作</h3>
+                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1185761001402028032" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 sm-hide">
+                            <div class="movies" id="NSNL">
+                                <a href="#NSNL_hide"  id="NSNL_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/らいせいMG-small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="NSNL_hide">
+                                    <div class="row">
+                                        <video src="images/らいせいMG.mp4" class="col-lg-6 col-md-12 movie_source" id="NSNL_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">No Summer No Life</h4>
+                                            <h3 class="video-tag ind">限界映像大会</h3>
+                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1185522504086933504" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 sm-hide">
+                            <div class="movies" id="echo">
+                                <a href="#echo_hide"  id="echo_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/echo-small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="echo_hide">
+                                    <div class="row">
+                                        <video src="images/echo.mp4" class="col-lg-6 col-md-12 movie_source" id="echo_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">Echo</h4>
+                                            <h3 class="video-tag ind">自主制作</h3>
+                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1176024090240409600" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 sm-hide">
+                            <div class="movies" id="kuutyuubunkai">
+                                <a href="#kuutyuubunkai_hide"  id="kuutyuubunkai_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/空中分解-small.mp4" muted autoplay loop></video></a>
+                                <div class="lity-hide" id="kuutyuubunkai_hide">
+                                    <div class="row">
+                                        <video src="images/空中分解.mp4" class="col-lg-6 col-md-12 movie_source" id="kuutyuubunkai_movie"></video>
+                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                            <h4 class="video-title ind">空中分解</h4>
+                                            <h3 class="video-tag ind">自主制作</h3>
+                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1164558318112612352" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-outline-secondary mt-3" href="discograpy.html"><h5 class="andmore">and more</h5></a>
+                </div>
+
+                <div id="contact">
+                    <h2 class="index pt-4">Contact</h2>
+                    <hr color="black" align="left" class="horizon">
+                    <div id="irai_about">
+                        <a class="slidertitle">
+                            <h3 class="slider"><i class="fas fa-plus plus"></i>　依頼について</h3>
+                        </a>
+                        <hr color="black" align="left" class="bar">
+                        <div class="slide"><p>映像製作をしています。<br>依頼の際はぜひTwitterのダイレクトメッセージでお気軽に声をおかけください。</p></div>
+                    </div>
+                    <div id="irai_flow">
+                        <a class="slidertitle"><h3 class="slider"><i class="fas fa-plus plus"></i>　依頼の流れ</h3></a>
+                        <hr color="black" align="left" class="bar">
+                        <div class="slide"><p>ダイレクトメッセージで音源を、素材となる画像を送信していただきます。歌詞がある曲の場合、歌詞もお預かりします。その際に作ってほしいイメージや納期などをできるだけ詳しくお伝えください。<br>
+                            画像に関しましては、なるべく大きいものをご用意ください。1920×1080以下の大きさの場合、使用をお断りさせていただく場合があります。<br>
+                            イメージが定まったら制作を開始致します。<br>
+                            進捗はこちらからお送りさせていただきます。その際に訂正などがございましたら気軽に声をおかけ下さい。また、中間提出などのご希望がございましたら、お申し付けください。完成し、確認が取れましたら送金していただきます。</p>
+                        </div>
+                    </div>
+                    <div id="irai_price">
+                        <a class="slidertitle"><h3 class="slider"><i class="fas fa-plus plus"></i>　料金について</h3></a>
+                        <hr color="black" align="left" class="bar">
+                        <div class="slide"><p>3分前後のMVを1~2万円程度でお受けしています。あくまで目安なので、ご予算に応じて対応させていただきます。お気軽にご相談ください。<br>
+                            お支払はアマギフ、LINE PAYでお願いしています。</p>
+                        </div>
+                    </div>
+                    <div id="irai_deliver">
+                        <a class="slidertitle"><h3 class="slider"><i class="fas fa-plus plus"></i>　納品方法</h3></a>
+                        <hr color="black" align="left" class="bar">
+                        <div class="slide"><p>基本的にはGoogleドライブを使って作品を納品します。指定などがございましたら教えてくださると幸いです。<br>
+                            動画は基本指定が無いようであれば 1920×1080 30FPS H264で出力させていただきます。</p>
+                        </div>
+                    </div>
+                    <div id="irai_warn">
+                        <a class="slidertitle"><h3 class="slider"><i class="fas fa-plus plus"></i>　注意</h3></a>
+                        <hr color="black" align="left" class="bar">
+                        <div class="slide"><p>他の依頼状況や予定があまりに忙しかった場合、依頼をお断りする場合があります。</p></div>
+                    </div>
+                    <a class="btn btn-outline-primary" href="https://twitter.com/messages/819476093950304256-833216959986618369" target="_blank"><i class="fab fa-twitter" style="font-size: 25px;"></i></a>
                 </div>
             </div>
-        </div>
         </div>
 
         <footer>
             <p>© 2019-2020 <a href="https://twitter.com/hakua_loveEQ" target="_blank">Hakua_love</a></p>
             <p>Design by <a href="https://twitter.com/minatoo86" target="_blank">Minato86</a> and <a href="https://twitter.com/RLettuce00" target="_blank">Rlettuce</a></p>
         </footer>
-
-        </div>
 
     <!--swiper-->
     <script src="swiper/js/swiper.js"></script>
