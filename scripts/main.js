@@ -1,7 +1,7 @@
 //ロード画面
 $(function() {
     var h = $(window).height();
-   
+
     $('#wrap').css('display','none');
     $('#loader-bg ,#loader').height(h).css('display','block');
 });
@@ -10,6 +10,14 @@ $(window).load(function () {
     $('#loader').delay(400).fadeOut(100);
     $('#wrap').css('display', 'block');
 });
+
+/*
+$(() => {
+    $('video').hover(function () {
+        $(this).css('display', 'none')
+    })
+})
+*/
 
 //swiper
 var swiper = new Swiper('.swiper-container', {
