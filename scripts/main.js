@@ -1,23 +1,19 @@
-//ロード画面
-$(function() {
-    var h = $(window).height();
-
-    $('#wrap').css('display','none');
-    $('#loader-bg ,#loader').height(h).css('display','block');
-});
-$(window).load(function () {
-    $('#loader-bg').delay(500).fadeOut(400);
-    $('#loader').delay(400).fadeOut(100);
-    $('#wrap').css('display', 'block');
-});
-
-/*
 $(() => {
     $('video').hover(function () {
         $(this).css('display', 'none')
     })
+
+    var h = $(window).height();
+
+    $('#wrap').css('display','none');
+    $('#loader-bg ,#loader').height(h).css('display','block');
 })
-*/
+
+$(window).load(() => {
+    $('#loader-bg').delay(500).fadeOut(400);
+    $('#loader').delay(400).fadeOut(100);
+    $('#wrap').css('display', 'block');
+});
 
 //swiper
 var swiper = new Swiper('.swiper-container', {
