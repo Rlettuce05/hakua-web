@@ -1,21 +1,47 @@
 $(() => {
+    // 動画ホバー時の動作
+    // 後で消す
     $('video').hover(function () {
         $(this).css('display', 'none')
     })
 
+    // 画面にロード画面をオーバーレイ
     var h = $(window).height();
 
     $('#wrap').css('display','none');
     $('#loader-bg ,#loader').height(h).css('display','block');
+
+    // contact画面を開くやつ
+    $('.slidertitle').each(function () {
+        $(this).click(function() {
+              $(this).find('.plus').toggleClass("minus");
+              $('++.slide',this).slideToggle(500);
+              return false;
+        });
+    });
+
+    // 作品のポップアップ
+    var player
+    $(".lity_atag").each(function() {
+        $(this).click(function () {
+            player = $(this).attr("id").split("_")[0]
+            document.getElementById(`${player}_movie`).load();
+            document.getElementById(`${player}_movie`).play();
+        });
+    });
+    $(document).on('click','.lity-wrap', function () {
+        document.getElementById(`${player}_movie`).pause();
+    });
 })
 
+// ロード終了後ロード画面からフェードアウト
 $(window).load(() => {
     $('#loader-bg').delay(500).fadeOut(400);
     $('#loader').delay(400).fadeOut(100);
     $('#wrap').css('display', 'block');
 });
 
-//swiper
+// swiperjsの設定
 var swiper = new Swiper('.swiper-container', {
     navigation: {
         nextEl: '.swiper-button-next',
@@ -34,33 +60,7 @@ var swiper = new Swiper('.swiper-container', {
     autoHeight: true,
 });
 
-//Works Movie
-$(function() {
-    var player
-    $(".lity_atag").each(function() {
-        $(this).click(function () {
-            player = $(this).attr("id").split("_")[0]
-            document.getElementById(`${player}_movie`).load();
-            document.getElementById(`${player}_movie`).play();
-        });
-    });
-    $(document).on('click','.lity-wrap', function () {
-        document.getElementById(`${player}_movie`).pause();
-    });
-});
-
-//contact
-$(function() {
-    $('.slidertitle').each(function () {
-          $(this).click(function() {
-                $(this).find('.plus').toggleClass("minus");
-                $('++.slide',this).slideToggle(500);
-                return false;
-          });
-    });
-});
-
-//show
+// スクロールのやつ
 var scrollreveal = {
     origin: 'bottom',
     distance: '50px',
@@ -69,4 +69,5 @@ var scrollreveal = {
     delay: 300,
     opacity: 0
 }
+
 ScrollReveal().reveal(".movies",scrollreveal);
