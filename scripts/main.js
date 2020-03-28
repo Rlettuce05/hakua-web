@@ -35,11 +35,14 @@ $(() => {
 })
 
 // ロード終了後ロード画面からフェードアウト
-$(window).load(() => {
+$(window).load(() => toggleMainPage());
+
+// メインページを表示
+const toggleMainPage = () => {
     $('#loader-bg').delay(500).fadeOut(400);
     $('#loader').delay(400).fadeOut(100);
     $('#wrap').css('display', 'block');
-});
+}
 
 // swiperjsの設定
 var swiper = new Swiper('.swiper-container', {
