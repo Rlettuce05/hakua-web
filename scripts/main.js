@@ -63,7 +63,7 @@ var swiper = new Swiper('.swiper-container', {
     autoHeight: true,
 });
 
-// スクロールのやつ
+// scrollreveal
 var scrollreveal = {
     origin: 'bottom',
     distance: '50px',

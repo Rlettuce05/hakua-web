@@ -91,13 +91,31 @@
 
                     <h2 class="index pt-4">Works</h2>
                     <hr color="black" align="left" class="horizon">
-                    <div class="row">
+                    <div class="row" id="movie_content">
+                        <script type="text/javascript">
+                            $(function(){
+                                $.getJSON("database.json", function(movies_list){
+                                    for(var i in movies_list){
+                                        var imagelink = movies_list[i].image,
+                                            videolink = movies_list[i].video,
+                                            videotitle = movies_list[i].title,
+                                            videotag = movies_list[i].tag;
+                                        var contents = `<div class="col-lg-4 col-md-12">`
+                                                     + `<a href="${videolink}" data-lity>`
+                                                     + `<img src="${imagelink}">`
+                                                     + `</a>`
+                                                     + `</div>`;
+                                        $("div#movie_content").append(contents);
+                                    }
+                                });
+                            });
+                        </script>
                         <div class="col-lg-4 col-md-12">
                             <div class="movies" id="alpha">
-                                <a href="#alpha_hide"  id="alpha_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="images/alpha_small.mp4" muted autoplay loop></video></a>
+                                <a href="#alpha_hide"  id="alpha_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="videos/alpha.mp4" muted autoplay loop></video></a>
                                 <div class="lity-hide" id="alpha_hide">
                                     <div class="row">
-                                        <video src="images/alpha.mp4" class="col-lg-6 col-md-12 movie_source" id="alpha_movie"></video>
+                                        <video src="videos/alpha.mp4" class="col-lg-6 col-md-12 movie_source" id="alpha_movie"></video>
                                         <div class="col-lg-6 col-md-12 movie_intro">
                                             <h4 class="video-title ind">Alpha Draconis</h4>
                                             <h3 class="video-tag ind">限界映像大会</h3>
