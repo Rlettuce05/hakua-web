@@ -94,18 +94,10 @@
                     <div class="row" id="movie_content">
                         <script type="text/javascript">
                             $(function(){
-                                $.getJSON("database.json", function(movies_list){
-                                    for(var i in movies_list){
-                                        var imagelink = movies_list[i].image,
-                                            videolink = movies_list[i].video,
-                                            videotitle = movies_list[i].title,
-                                            videotag = movies_list[i].tag;
-                                        var contents = `<div class="col-lg-4 col-md-12">`
-                                                     + `<a href="${videolink}" data-lity>`
-                                                     + `<img src="${imagelink}">`
-                                                     + `</a>`
-                                                     + `</div>`;
-                                        $("div#movie_content").append(contents);
+                                $.getJSON("database.json", function(videos_list){
+                                    for(var i in videos_list){
+                                        var video_title = videos_list[i].title;
+                                        console.log(video_title)
                                     }
                                 });
                             });
