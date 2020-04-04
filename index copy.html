@@ -96,12 +96,23 @@
                             $(function(){
                                 $.getJSON("database.json", (videos_list) => {
                                     for(var i in videos_list){
-                                        var video_title = videos_list[i].title;
-                                        console.log(video_title);
+                                        var video_title = videos_list[i].title,
+                                            video_link = videos_list[i].video,
+                                            video_tag = videos_list[i].tag,
+                                            img_link = videos_list[i].image;
+                                        var content = `<div class="col-lg-4 col-md-12">`
+                                                    + `<div class="movies">`
+                                                    + `<p><a href=${video_link} data-lity><img src=${img_link} class="movie_shows"></a></p>`
+                                                    + `<h4 class="video-title ind">${video_title}</h4>`
+                                                    + `<h3 class="video-tag ind">${video_tag}</h3>`
+                                                    + `</div>`
+                                                    + `</div>`
+                                        $("#movie_content").append(content);
                                     }
                                 });
                             });
                         </script>
+
                         <div class="col-lg-4 col-md-12">
                             <div class="movies" id="alpha">
                                 <a href="#alpha_hide"  id="alpha_link" class="lity_atag" data-lity><video class="embed-responsive embed-responsive-16by9 movie_shows" src="videos/alpha.mp4" muted autoplay loop></video></a>
