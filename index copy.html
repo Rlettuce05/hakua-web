@@ -99,12 +99,15 @@
                                         var video_title = videos_list[i].title,
                                             video_link = videos_list[i].video,
                                             video_tag = videos_list[i].tag,
+                                            video_id = videos_list[i].id,
                                             img_link = videos_list[i].image;
                                         var content = `<div class="col-lg-4 col-md-12">`
                                                     + `<div class="movies">`
                                                     + `<p><a href=${video_link} data-lity><img src=${img_link} class="movie_shows"></a></p>`
+                                                    + `<div class="movie_info">`
                                                     + `<h4 class="video-title ind">${video_title}</h4>`
                                                     + `<h3 class="video-tag ind">${video_tag}</h3>`
+                                                    + `</div>`
                                                     + `</div>`
                                                     + `</div>`
                                         $("#movie_content").append(content);

@@ -1,8 +1,8 @@
 $(() => {
     // 動画ホバー時の動作
     // 後で消す
-    $('video').hover(function () {
-        $(this).css('display', 'none')
+    $('.movies').hover(function () {
+        $('++.movie_info',this).css('display', 'inline')
     })
 
     // 画面にロード画面をオーバーレイ
