@@ -101,15 +101,21 @@
                                             video_tag = videos_list[i].tag,
                                             video_id = videos_list[i].id,
                                             img_link = videos_list[i].image;
-                                        var content = `<div class="col-lg-4 col-md-12">`
-                                                    + `<div class="movies">`
-                                                    + `<p><a href=${video_link} data-lity><img src=${img_link} class="movie_shows"></a></p>`
-                                                    + `<div class="movie_info">`
-                                                    + `<h4 class="video-title ind">${video_title}</h4>`
-                                                    + `<h3 class="video-tag ind">${video_tag}</h3>`
-                                                    + `</div>`
-                                                    + `</div>`
-                                                    + `</div>`
+                                        var content =  `<div class="col-lg-4 col-md-12">
+                                                            <div class="movies" id=${video_id}>
+                                                                <a href="#${video_id}_hide"  id="${video_id}_link" class="lity_atag" data-lity><img class="movie_shows" src=${img_link}></a>
+                                                                <div class="lity-hide" id="${video_id}_hide">
+                                                                    <div class="row">
+                                                                        <video src=${video_link} class="col-lg-6 col-md-12 movie_source" id="${video_id}_movie"></video>
+                                                                        <div class="col-lg-6 col-md-12 movie_intro">
+                                                                            <h4 class="video-title ind">${video_title}</h4>
+                                                                            <h3 class="video-tag ind">${video_tag}</h3>
+                                                                            <a class="btn" href="https://twitter.com/hakua_loveEQ/status/1234483765700775936?s=19" target="_blank"><i class="fab fa-twitter link_btn" style="font-size: 25px;"></i></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>`
                                         $("#movie_content").append(content);
                                     }
                                 });
