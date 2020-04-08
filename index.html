@@ -114,12 +114,19 @@
                                             video_link = videos_list[i].video,
                                             video_tag = videos_list[i].tag,
                                             img_link = videos_list[i].image;
+                                            twitterurl = videos_list[i].twitterurl,
+                                            youurl = videos_list[i].youurl
                                         var content = `<div class="col-lg-4 col-md-12 py-4">`
                                                     + `<div class="movies">`
                                                     + `<p><a href=${video_link} data-lity><img src=${img_link}></a></p>`
                                                     + `<p style="margin: 0;">${video_tag}</p>`
                                                     + `<h3>${video_title}</h3>`
-                                                    + `</div>`
+                                                    if(twitterurl){
+                                                        content = content + `<a href=${twitterurl} target="_blank">twitter</a>`
+                                                    }if(youurl){
+                                                        content = content + `<a href=${youurl} target="_blank">youtube</a>`
+                                                    }
+                                                    content = content + `</div>`
                                                     + `</div>`
                                         $("#movie_content").append(content);
                                     }
