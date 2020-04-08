@@ -121,12 +121,18 @@
                                                     + `<p><a href=${video_link} data-lity><img src=${img_link}></a></p>`
                                                     + `<p style="margin: 0;">${video_tag}</p>`
                                                     + `<h3>${video_title}</h3>`
+                                                    + `<div class="row">`
                                                     if(twitterurl){
-                                                        content = content + `<a href=${twitterurl} target="_blank">twitter</a>`
+                                                        content = content + `<div class="col-2">`
+                                                                          + `<a href=${twitterurl} target="_blank">twitter</a>`
+                                                                          + `</div>`
                                                     }if(youurl){
-                                                        content = content + `<a href=${youurl} target="_blank">youtube</a>`
+                                                        content = content + `<div class="col-2">`
+                                                                          + `<a href=${youurl} target="_blank">youtube</a>`
+                                                                          + `</div>`
                                                     }
                                                     content = content + `</div>`
+                                                    + `</div>`
                                                     + `</div>`
                                         $("#movie_content").append(content);
                                     }
