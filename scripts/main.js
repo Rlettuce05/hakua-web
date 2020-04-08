@@ -66,5 +66,3 @@ var scrollreveal = {
     delay: 300,
     opacity: 0
 }
-
-ScrollReveal().reveal(".movies",scrollreveal);
