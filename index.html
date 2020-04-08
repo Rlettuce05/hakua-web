@@ -35,6 +35,15 @@
             <meta property="og:title" content="Hakua.work" />
             <meta property="og:description" content="ハクアを博愛する人のPortfolioサイト" /> 
             <meta property="og:image" content="https://hakua.work/images/logo.png" />
+        <!--redirect-->
+            <script type="text/javascript">
+            $(() => {
+                let width = $(window).width();
+                if (width <= 1024) {
+                    location.href = '/sp.html';
+                }
+            })
+            </script>
         <!--adobe fonts-->
             <script>
             (function(d) {
@@ -62,19 +71,19 @@
                 <div id="pagetop-swipe" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <p class="centering"><video class="slide-content" src="videos/suside.mp4" muted autoplay loop alt="suside"></p>
+                            <p class="centering"><video class="slide-content" preload="none" src="videos/suside.mp4" muted autoplay loop alt="suside"></p>
                         </div>
                         <div class="swiper-slide">
-                            <p class="centering"><video class="slide-content" src="videos/reel2019.mp4" muted autoplay loop alt="reel2019"></p>
+                            <p class="centering"><video class="slide-content" preload="none" src="videos/reel2019.mp4" muted autoplay loop alt="reel2019"></p>
                         </div>
                         <div class="swiper-slide">
-                            <p class="centering"><video class="slide-content" src="videos/enma.mp4" muted autoplay loop alt="閻魔様のいうとおり"></p>
+                            <p class="centering"><video class="slide-content" preload="none" src="videos/enma.mp4" muted autoplay loop alt="閻魔様のいうとおり"></p>
                         </div>
                         <div class="swiper-slide">
-                            <p class="centering"><video class="slide-content" src="videos/bunkai.mp4" muted autoplay loop alt="空中分解"></p>
+                            <p class="centering"><video class="slide-content" preload="none" src="videos/bunkai.mp4" muted autoplay loop alt="空中分解"></p>
                         </div>
                         <div class="swiper-slide">
-                            <p class="centering"><video class="slide-content" src="videos/egorock.mp4" muted autoplay loop alt="エゴロック"></p>
+                            <p class="centering"><video class="slide-content" preload="none" src="videos/egorock.mp4" muted autoplay loop alt="エゴロック"></p>
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -144,7 +153,7 @@
 
                 <div id="contact" class="py-4">
                     <h1 class="index pt-4">Contact</h2>
-                    <hr color="black" align="left" class="horizon">
+                    <hr color="black" align="left" class="my-4">
                     <div id="irai_about">
                         <a class="slidertitle">
                             <h3 class="slider"><i class="fas fa-plus plus"></i>　依頼について</h3>
