@@ -3,60 +3,73 @@
         "title": "Alpha Draconis",
         "video": "videos/alpha.mp4",
         "image": "images/alpha.png",
+        "id": "alpha",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1234483765700775936",
         "tag": "限界映像大会"
     },
     {
         "title": "Gift",
         "video": "videos/gift.mp4",
         "image": "images/gift.png",
+        "id": "gift",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1216187755291561984",
         "tag": "限界映像大会"
     },
     {
         "title": "スーサイドパレヱド",
         "video": "videos/suside.mp4",
         "image": "images/suside.png",
+        "id": "suside",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1214113995717627904",
+        "youurl": "https://www.youtube.com/watch?v=p42qPy7uxwk&feature=youtu.be",
         "tag": "自主制作"
     },
     {
         "title": "REEL 2019",
         "video": "videos/reel2019.mp4",
         "image": "images/reel2019.png",
+        "id": "reel2019",
+        "youurl": "https://www.youtube.com/watch?v=etcIMioQl28",
         "tag": "自主制作"
     },
     {
         "title": "閻魔様のいうとおり",
         "video": "videos/enma.mp4",
         "image": "images/enma.png",
-        "tag": "自主制作"
+        "id": "enma",
+        "youurl": "https://www.youtube.com/watch?v=sIRJlDjcfOs",
+        "tag": "合作"
     },
     {
         "title": "エゴロック",
         "video": "videos/egorock.mp4",
         "image": "images/egorock.png",
+        "id": "egorock",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1185761001402028032",
         "tag": "自主制作"
-    },
-    {
-        "title": "No Summer No Life",
-        "video": "videos/nsnl.mp4",
-        "image": "images/nsnl.png",
-        "tag": "限界映像大会"
     },
     {
         "title": "Echo",
         "video": "videos/echo.mp4",
         "image": "images/echo.png",
+        "id": "echo",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1176024090240409600",
         "tag": "自主制作"
     },
     {
         "title": "空中分解",
         "video": "videos/bunkai.mp4",
         "image": "images/bunkai.png",
+        "id": "kutyubunkai",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1164558318112612352",
         "tag": "自主制作"
     },
     {
         "title": "Space Buccaneers",
         "video": "videos/space.mp4",
         "image": "images/space.png",
+        "id": "space",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1172886121119793159",
         "tag": "限界映像大会"
     }
 ]

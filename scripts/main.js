@@ -1,12 +1,4 @@
 $(() => {
-    // 動画ホバー時の動作
-    // 後で消す
-    /*
-    $('video').hover(function () {
-        $(this).css('display', 'none')
-    })
-    */
-
     // 画面にロード画面をオーバーレイ
     var h = $(window).height();
 
@@ -74,5 +66,3 @@ var scrollreveal = {
     delay: 300,
     opacity: 0
 }
-
-ScrollReveal().reveal(".movies",scrollreveal);
