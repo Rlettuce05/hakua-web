@@ -39,6 +39,7 @@ $(() => {
 // ロード終了後ロード画面からフェードアウト
 $(window).load(() => toggleMainPage());
 
+
 // メインページを表示
 const toggleMainPage = () => {
     $('#loader-bg').delay(500).fadeOut(400);
