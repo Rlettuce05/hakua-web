@@ -28,6 +28,17 @@
             <meta name="viewport" content="width=device-width,initial-scale=1.0">
             <title>Hakua_love</title>
             <link rel="shortcut icon" href="images/icon.jpg">
+        <!--adobe fonts-->
+            <script>
+            (function(d) {
+                var config = {
+                kitId: 'wwe4qmf',
+                scriptTimeout: 3000,
+                async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+            </script>
     </head>
 
     <body>
@@ -36,7 +47,7 @@
         </div>
 
         <div class="pagetop">
-            <div id="pagetop-title">
+            <div class="pagetop-title">
                 <h1 class="container">Hakua's Works</h1>
             </div>
 
@@ -67,13 +78,15 @@
 
         <div class="maincontent">
             <div class="container">
-                <div id="About">
-                    <h2 class="index pt-4">About</h2>
-                    <hr color="black" align="left" class="horizon">
+                <div id="about" class="py-5">
+                    <h1 class="index pt-4">About</h2>
+                    <hr color="black" align="left" class="my-4">
                     <div class="row">
-                        <img class="col-sm-12 col-md-6 col-lg-4" src="images/logo.svg">
-                        <div class="col-sm-12 col-md-6 col-lg-8">
-                            <p class="self-introduction">映像制作をしている高校生です。</p>
+                        <img class="col-sm-12 col-md-6 col-lg-3" src="images/logo.svg">
+                        <div class="col-sm-12 col-md-6 col-lg-9">
+                            <h1>ハクアを博愛する人</h1>
+                            <p>映像を作っている高校生です。<br>モーショングラフィックスやタイポグラフィなどを勉強しています。<br>
+                            ちなみにハクアはもう博愛していません。</p>
                             <h4>
                                 <a class="btn btn-outline-danger" href="https://www.youtube.com/channel/UCQu9wEzbJKYqBQLSz8MQKTg" target="_blank"><i class="fab fa-youtube"></i></a>
                                 <a class="btn btn-outline-primary" href="https://twitter.com/hakua_loveEQ" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -81,11 +94,10 @@
                         </div>
                     </div>
                 </div>
-
-                <div id="Works">
-
-                    <h2 class="index pt-4">Works</h2>
-                    <hr color="black" align="left" class="horizon">
+                <div id="works" class="py-5">
+                    <h1 class="index pt-4">Works</h2>
+                    <hr color="black" align="left" class="my-4">
+                    <p>クリックすると動画を再生します</p>
                     <div class="row" id="movie_content">
                         <script type="text/javascript">
                             $(function(){
@@ -95,9 +107,9 @@
                                             video_link = videos_list[i].video,
                                             video_tag = videos_list[i].tag,
                                             img_link = videos_list[i].image;
-                                        var content = `<div class="col-lg-4 col-md-12">`
+                                        var content = `<div class="col-lg-4 col-md-12 py-4">`
                                                     + `<div class="movies">`
-                                                    + `<p><a href=${video_link} data-lity><img src=${img_link} class="movie_shows"></a></p>`
+                                                    + `<p><a href=${video_link} data-lity><img src=${img_link}></a></p>`
                                                     + `<h4 class="video-title ind">${video_title}</h4>`
                                                     + `<h3 class="video-tag ind">${video_tag}</h3>`
                                                     + `</div>`
@@ -108,11 +120,10 @@
                             });
                         </script>
                     </div>
-                    <a class="btn btn-outline-secondary mt-3" href="discograpy.html"><h5 class="andmore">and more</h5></a>
                 </div>
 
-                <div id="contact">
-                    <h2 class="index pt-4">Contact</h2>
+                <div id="contact" class="py-4">
+                    <h1 class="index pt-4">Contact</h2>
                     <hr color="black" align="left" class="horizon">
                     <div id="irai_about">
                         <a class="slidertitle">
@@ -149,12 +160,12 @@
                         <hr color="black" align="left" class="bar">
                         <div class="slide"><p>他の依頼状況や予定があまりに忙しかった場合、依頼をお断りする場合があります。</p></div>
                     </div>
-                    <a class="btn btn-outline-primary" href="https://twitter.com/messages/819476093950304256-833216959986618369" target="_blank"><i class="fab fa-twitter" style="font-size: 25px;"></i></a>
+                    <a class="btn btn-outline-primary my-4" href="https://twitter.com/messages/819476093950304256-833216959986618369" target="_blank"><i class="fab fa-twitter" style="font-size: 25px;"></i></a>
                 </div>
             </div>
         </div>
 
-        <footer>
+        <footer class="mt-5">
             <p>© 2019-2020 <a href="https://twitter.com/hakua_loveEQ" target="_blank">Hakua_love</a></p>
             <p>Design by <a href="https://twitter.com/minatoo86" target="_blank">Minato86</a> and <a href="https://twitter.com/RLettuce00" target="_blank">Rlettuce</a></p>
         </footer>
