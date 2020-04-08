@@ -1,12 +1,4 @@
 $(() => {
-    // 動画ホバー時の動作
-    // 後で消す
-    /*
-    $('video').hover(function () {
-        $(this).css('display', 'none')
-    })
-    */
-
     // 画面にロード画面をオーバーレイ
     var h = $(window).height();
 
@@ -38,7 +30,6 @@ $(() => {
 
 // ロード終了後ロード画面からフェードアウト
 $(window).load(() => toggleMainPage());
-
 
 // メインページを表示
 const toggleMainPage = () => {

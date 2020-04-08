@@ -1,3 +1,23 @@
+/* 全体 */
+
+body {
+    font-family: a-otf-midashi-go-mb31-pr6n,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 480px) { 
+    p {
+        font-size: 1em;
+    }
+}
+
+/* サイトトップ */
+
 .pagetop {
     color: white;
     width: 100%;
@@ -7,7 +27,7 @@
     background-size: cover;
 }
 
-#pagetop-title {
+.pagetop-title {
     padding: 30px 300px;
     position: absolute;
 }
@@ -19,128 +39,6 @@
     align-items: center;
 }
 
-.horizon {
-    width: 50vw;
-    margin-bottom: 25px;
-}
-.self-introduction {
-    font-size: larger;
-}
-.index{
-    font-size: 60px;
-}
-.maincontent {
-    background-color: white;
-    padding: 50px 0;
-}
-
-/*Works*/
-.movies {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.movie_shows{
-    width: 320px;
-    height: 180px;
-}
-.movie_info {
-    display: none;
-}
-.video-tag {
-    font-size: x-large;
-}
-.video-tag.ind {
-    color: white;
-}
-.video-tag.disco {
-    font-size: medium;
-}
-.video-title {
-    font-size: xx-large;
-}
-.video-title.ind {
-    color: white;
-}
-.video-title.disco {
-    font-size: large;
-}
-.link_btn {
-    color: white;
-}
-.fa-twitter {
-    font-size: 20px;
-}
-.fa-youtube {
-    font-size: 25px;
-}
-#player_bg {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 3;
-}
-#player {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 300px;
-    margin-top: -150px;
-    margin-left: -150px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.5);
-    z-index: 4;
-}
-.andmore {
-    font-size: x-large;
-}
-
-/*contact*/
-.slide {
-    display: none;
-}
-.slider {
-    font-size: x-large;
-}
-.bar {
-    width: 250px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.plus {
-    transition: 0.5s ease;
-}
-.plus.minus {
-    transform: rotate(315deg);
-}
-
-/*header*/
-.header {
-    background-color: black;
-    display: flex;
-    width: 100%;
-    z-index: 2;
-    position: fixed;
-    top: 0px;
-}
-.menu {
-    color: white;
-    font-size: xx-large;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.menu:hover {
-    text-decoration: none;
-    color: white;
-    text-shadow: 0px 0px 5px white;
-}
-
-/*swiper*/
 .slide-content {
     position: relative;
     width: 55vw;
@@ -152,7 +50,24 @@
     text-align: center;
 }
 
-/*loader*/
+
+@media screen and (max-width: 480px) { 
+    .pagetop {
+        height: 7rem;
+    }
+
+    .swipe-wrap {
+        display: none;
+    }
+
+    .pagetop-title {
+        padding: 30px 10px;
+        position: absolute;
+    }
+}
+
+/* ローディング */
+
 #loader-bg {
 	width: 100%;
 	height: 100%;
@@ -172,7 +87,56 @@
 	margin-left: -250px;
 }
 
-/* footer */
+@media screen and (max-width: 480px) { 
+    #loader-bg img {
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -150px;
+        width: 300px;
+    }
+}
+
+/* About */
+
+@media screen and (max-width: 480px) { 
+    #about h1 {
+        margin-top: 1em;
+        font-size: 2em;
+    }
+}
+
+/* Works一覧 */
+
+.movies img {
+    width: 100%;
+}
+
+/* Contactメニュー */
+
+.slide {
+    display: none;
+}
+.slider {
+    font-size: x-large;
+}
+.bar {
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.plus {
+    transition: 0.5s ease;
+}
+.plus.minus {
+    transform: rotate(315deg);
+}
+
+/* フッター */
+
 footer {
     background-color: black;
     color: white;
