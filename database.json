@@ -5,6 +5,25 @@
         "image": "images/ramune.png",
         "id": "ramune",
         "youurl": "https://www.youtube.com/watch?v=jiBEDn2WbsI",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1248576195584638976",
+        "tag": "自主制作"
+    },
+    {
+        "title": "Heartbeat",
+        "video": "videos/heartbeat.mp4",
+        "image": "images/hertbeat.jpg",
+        "id": "heartbeat",
+        "youurl": "https://www.youtube.com/watch?v=pH1XATnXPWk",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1244823500839243776",
+        "tag": "春のPV連続投稿祭"
+    },
+    {
+        "title": "ゴーストルール",
+        "video": "videos/ghost.mp4",
+        "image": "images/ghost.png",
+        "id": "ghost",
+        "youurl": "https://www.youtube.com/watch?v=n1T3eqN8kyE",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1236188685550288896",
         "tag": "自主制作"
     },
     {
