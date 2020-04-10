@@ -1,5 +1,13 @@
 [
     {
+        "title": "ラムネ",
+        "video": "videos/ramune.mp4",
+        "image": "images/ramune.png",
+        "id": "ramune",
+        "youurl": "https://www.youtube.com/watch?v=jiBEDn2WbsI",
+        "tag": "自主制作"
+    },
+    {
         "title": "Alpha Draconis",
         "video": "videos/alpha.mp4",
         "image": "images/alpha.png",
