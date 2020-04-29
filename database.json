@@ -1,5 +1,23 @@
 [
     {
+        "title": "kawaii",
+        "video": "videos/kawaii.mp4",
+        "image": "images/kawaii.png",
+        "id": "kawaii",
+        "youurl": "https://www.youtube.com/watch?v=gkEz0HEPrA4",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1251047824629747712",
+        "tag": "自主制作"
+    },
+    {
+        "title": "アンノウン・マザーグース",
+        "video": "videos/unknown.mp4",
+        "image": "images/unknown.png",
+        "id": "unknown",
+        "youurl": "https://www.youtube.com/watch?v=z6My3-pIcz4",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1252492866334556160",
+        "tag": "限界映像大会"
+    },
+    {
         "title": "ラムネ",
         "video": "videos/ramune.mp4",
         "image": "images/ramune.png",
