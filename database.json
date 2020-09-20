@@ -1,5 +1,32 @@
 [
     {
+        "title": "Initialized(XFD)",
+        "video": "videos/initial.mp4",
+        "image": "images/initial.png",
+        "id": "initial",
+        "youurl": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
+        "twitterurl": "https://twitter.com/undergrounet/status/1293716287525253120",
+        "tag": "依頼"
+    },
+    {
+        "title": "アーライピー",
+        "video": "videos/arraipy.mp4",
+        "image": "images/arraipy.png",
+        "id": "arraipy",
+        "youurl": "https://www.youtube.com/watch?v=k9NoAu3c2OQ",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1297030840291954689",
+        "tag": "自主制作"
+    },
+    {
+        "title": "Ghost dinner party",
+        "video": "videos/gdp.mp4",
+        "image": "images/gdp.png",
+        "id": "gdp",
+        "youurl": "https://www.youtube.com/watch?v=cSyJ0KwJqrs",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1277149739247525888",
+        "tag": "自主制作"
+    },
+    {
         "title": "ナンセンスの塊",
         "video": "videos/nonsense.mp4",
         "image": "images/nonsense.png",
