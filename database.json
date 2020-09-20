@@ -1,5 +1,14 @@
 [
     {
+        "title": "アーライピー",
+        "video": "videos/arraipy.mp4",
+        "image": "images/arraipy.png",
+        "id": "arraipy",
+        "youurl": "https://www.youtube.com/watch?v=k9NoAu3c2OQ",
+        "twitterurl": "https://twitter.com/hakua_loveEQ/status/1297030840291954689",
+        "tag": "自主制作"
+    },
+    {
         "title": "Ghost dinner party",
         "video": "videos/gdp.mp4",
         "image": "images/gdp.png",
