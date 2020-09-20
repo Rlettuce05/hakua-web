@@ -1,5 +1,13 @@
 [
     {
+        "title": "Initialized(XFD)",
+        "video": "videos/initial.mp4",
+        "image": "images/initial.png",
+        "id": "initial",
+        "youurl": "https://www.youtube.com/watch?v=hkGKqvrtu8U",
+        "tag": "依頼"
+    },
+    {
         "title": "アーライピー",
         "video": "videos/arraipy.mp4",
         "image": "images/arraipy.png",
