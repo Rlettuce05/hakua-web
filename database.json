@@ -1,5 +1,13 @@
 [
     {
+        "title": "人間らしい",
+        "video": "videos/humanity.mp4",
+        "image": "images/humanity.png",
+        "id": "humanity",
+        "youurl": "https://www.youtube.com/watch?v=PRfVoCnoPj4",
+        "tag": "合作"
+    },
+    {
         "title": "Initialized(XFD)",
         "video": "videos/initial.mp4",
         "image": "images/initial.png",
