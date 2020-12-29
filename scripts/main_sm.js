@@ -1,3 +1,8 @@
 if (navigator.userAgent.match(/(iPhone|Android|iPad|iPod)/)) {
-    //今のところ特にないけど今後追加する可能性があるので残しておいてください
+    $(() => {
+        //topのmarginを設定する
+        var width = $(window).width();
+
+        $("#pagetop").css('margin-bottom', `${(width/16)*9-112}px`);
+    });
 }
