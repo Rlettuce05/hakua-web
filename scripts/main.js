@@ -26,10 +26,6 @@ $(() => {
     $(document).on('click','.lity-wrap', function () {
         document.getElementById(`${player}_movie`).pause();
     });
-
-    //topのmarginを設定する
-    var width = $(window).width();
-    $("#pagetop").css('margin-bottom', `${(width/16)*9-112}px`);
 })
 
 // ロード終了後ロード画面からフェードアウト
