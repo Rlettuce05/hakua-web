@@ -26,6 +26,10 @@ $(() => {
     $(document).on('click','.lity-wrap', function () {
         document.getElementById(`${player}_movie`).pause();
     });
+
+    //topのmarginを変更
+    var width = $(window).width();
+    $(".pagetop").css('height', `${(width/16)*9-86}px`);
 })
 
 // ロード終了後ロード画面からフェードアウト
